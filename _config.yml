@@ -1,3 +1,4 @@
 theme: jekyll-theme-dinky
 name: coder
 markdown: kramdown
+permalink: /blog/:title
