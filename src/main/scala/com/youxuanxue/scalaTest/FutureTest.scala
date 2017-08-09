@@ -92,3 +92,29 @@ object TryCompleteWithFuture extends FutureTest {
   }
 
 }
+
+object TryCompleteWithFutureV2 extends FutureTest {
+  def main(args: Array[String]): Unit = {
+    var testing = Promise[Int]
+
+    if (!testing.isCompleted) {
+      testing.tryCompleteWith(generateFuture(1, 100))
+    }
+
+    while (!testing.isCompleted) {
+      Thread.sleep(100)
+    }
+
+    if (testing.isCompleted) {
+      testing = Promise[Int]
+      testing.tryCompleteWith(generateFuture(2, 1000))
+    }
+
+    while (!testing.isCompleted) {
+      Thread.sleep(100)
+    }
+
+    // print 1,2
+    // 说明可以通过对 testing 变量赋值实现多个 future
+  }
+}
