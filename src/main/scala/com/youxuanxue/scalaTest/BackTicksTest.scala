@@ -2,12 +2,16 @@ package com.youxuanxue.scalaTest
 
 /**
   * @author xuejiao
+  *
+  *         http://docs.scala-lang.org/cheatsheets/index.html
   */
 object BackTicksTest {
 
   def main(args: Array[String]): Unit = {
     test1()
     test2()
+    test21()
+
     test3()
     test4()
     test5()
@@ -26,6 +30,15 @@ object BackTicksTest {
     val v42 = 42
     Some(3) match {
       case Some(`v42`) => println("42")
+      case _ => println("Not 42")
+    }
+  }
+
+  def test21(): Unit = {
+    // 首字母大写的变量名不会去做 patten 类型匹配。会做值匹配。
+    val UppercaseVal = 42
+    Some(3) match {
+      case Some(UppercaseVal) => println("42")
       case _ => println("Not 42")
     }
   }
