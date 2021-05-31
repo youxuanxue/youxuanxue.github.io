@@ -1,4 +1,4 @@
-theme: jekyll-theme-dinky
+theme: jekyll-theme-minimal
 name: coder
 markdown: kramdown
 permalink: /blog/:title
