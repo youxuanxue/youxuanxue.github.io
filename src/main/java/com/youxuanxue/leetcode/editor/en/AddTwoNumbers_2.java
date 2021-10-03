@@ -118,13 +118,12 @@ public class AddTwoNumbers_2 {
 
             while (pointer1 != null && pointer2 != null) {
                 int currentSum = pointer1.val + pointer2.val + extraAdd;
-                int currentNum = currentSum % 10;
                 if (currentSum > 9) {
                     extraAdd = 1;
                 } else {
                     extraAdd = 0;
                 }
-                resultPointer.next = new ListNode(currentNum);
+                resultPointer.next = new ListNode(currentSum % 10);
 
                 // 指针前移
                 pointer1 = pointer1.next;
@@ -142,13 +141,12 @@ public class AddTwoNumbers_2 {
             // 两个指针不一样长
             while (nonEmpty != null) {
                 int currentSum = nonEmpty.val + extraAdd;
-                int currentNum = currentSum % 10;
                 if (currentSum > 9) {
                     extraAdd = 1;
                 } else {
                     extraAdd = 0;
                 }
-                resultPointer.next = new ListNode(currentNum);
+                resultPointer.next = new ListNode(currentSum % 10);
                 resultPointer = resultPointer.next;
                 nonEmpty = nonEmpty.next;
             }
