@@ -44,19 +44,19 @@
 package com.youxuanxue.leetcode.editor.en;
 
 
-public class AddTwoNumbers_2 {
+public class S2AddTwoNumbers {
 
     public static void main(String[] args) {
-        Solution solution = new AddTwoNumbers_2().new Solution();
+        Solution solution = new S2AddTwoNumbers().new Solution();
 
-        ListNode l1 = new AddTwoNumbers_2().new ListNode(
+        ListNode l1 = new S2AddTwoNumbers().new ListNode(
             9,
-            new AddTwoNumbers_2().new ListNode(9)
+            new S2AddTwoNumbers().new ListNode(9)
         );
 
-        ListNode l2 = new AddTwoNumbers_2().new ListNode(
+        ListNode l2 = new S2AddTwoNumbers().new ListNode(
             1,
-        new AddTwoNumbers_2().new ListNode(9)
+        new S2AddTwoNumbers().new ListNode(9)
 
         );
 

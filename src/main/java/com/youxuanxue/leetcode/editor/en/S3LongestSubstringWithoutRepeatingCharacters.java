@@ -50,10 +50,10 @@ package com.youxuanxue.leetcode.editor.en;
 
 import java.util.HashMap;
 
-public class LongestSubstringWithoutRepeatingCharacters_3 {
+public class S3LongestSubstringWithoutRepeatingCharacters {
 
   public static void main(String[] args) {
-       Solution solution = new LongestSubstringWithoutRepeatingCharacters_3().new Solution();
+       Solution solution = new S3LongestSubstringWithoutRepeatingCharacters().new Solution();
 
       solution.lengthOfLongestSubstring("pwwkew");
       solution.lengthOfLongestSubstring("abcbdef");

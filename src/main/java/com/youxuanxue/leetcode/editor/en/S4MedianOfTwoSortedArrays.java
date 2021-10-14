@@ -60,11 +60,11 @@ package com.youxuanxue.leetcode.editor.en;
 
 import com.youxuanxue.common.StringCore;
 
-public class MedianOfTwoSortedArrays_4 {
+public class S4MedianOfTwoSortedArrays {
 
     public static void main(String[] args) {
         System.out.println("======solution===");
-        Solution solution = new MedianOfTwoSortedArrays_4().new Solution();
+        Solution solution = new S4MedianOfTwoSortedArrays().new Solution();
         solution.findMedianSortedArrays(new int[]{1,2,3,4}, new int[]{5});
         solution.findMedianSortedArrays(new int[]{1,2,3}, new int[]{5});
         solution.findMedianSortedArrays(new int[]{1,2}, new int[]{3,4});
@@ -72,7 +72,7 @@ public class MedianOfTwoSortedArrays_4 {
         solution.findMedianSortedArrays(new int[]{1,2,3,4,5,6,7,8,9}, new int[]{1,2});
 
         System.out.println("======solution 2===");
-        Solution2 solution2 = new MedianOfTwoSortedArrays_4().new Solution2();
+        Solution2 solution2 = new S4MedianOfTwoSortedArrays().new Solution2();
         solution2.findMedianSortedArrays(new int[]{1,2,3,4}, new int[]{5});
         solution2.findMedianSortedArrays(new int[]{1,2,3}, new int[]{5});
         solution2.findMedianSortedArrays(new int[]{1,2}, new int[]{3,4});

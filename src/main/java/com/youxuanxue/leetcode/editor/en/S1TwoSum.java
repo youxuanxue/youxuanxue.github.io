@@ -53,10 +53,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class TwoSum_1 {
+public class S1TwoSum {
 
     public static void main(String[] args) {
-        Solution solution = new TwoSum_1().new Solution();
+        Solution solution = new S1TwoSum().new Solution();
 
         List<int[]> numsList = new ArrayList<int[]>();
         numsList.add(new int[]{2, 7, 11, 1});
